@@ -17,30 +17,31 @@ Backend APIs developed in Laravel framework with JWT based authentication featur
     ```
 
 3. Copy the *.env.example* file and rename it to *.env*
+       - For Host address use localhost, 127.0.0.1 or your local ip address(192.168.0.1)
 
-4. Generate an app encryption key
+5. Generate an app encryption key
 
     ```
     php artisan key:generate
     ```
 
-5. Create an empty database for our application
+6. Create an empty database for our application
 
-6. In the *.env* file, add database information to allow Laravel to connect to the database
+7. In the *.env* file, add database information to allow Laravel to connect to the database
 
-7. Migrate the database
+8. Migrate the database
 
     ```
     php artisan migrate
     ```
 
-8. Seed the database
+9. Seed the database
 
     ```
     php artisan db:seed
     ```
 
-9. Create the JWT secret key
+10. Create the JWT secret key
 
     ```
     php artisan jwt:secret
@@ -50,7 +51,7 @@ Backend APIs developed in Laravel framework with JWT based authentication featur
     JWT_SECRET=******************************
     JWT_ALGO=********
     ```
-10. Run the application
+11. Run the application
 
     ```
     php artisan serve
@@ -116,7 +117,7 @@ Laravel App: Visit http://localhost in your browser to view your Laravel applica
 N/B: You might need to Allow external Docker access on vite.config.js 
 ```sh
  server: {
-        host: '192.168.7.85',  // Allow external Docker access (local ip address)
+        host: '192.168.7.85',  // Allow external Docker access (local ip address) or 0.0.0.0
         port: 3000,       // Must match the Docker internal port
         watch: {
             usePolling: true,
