@@ -117,7 +117,7 @@ Laravel App: Visit http://localhost in your browser to view your Laravel applica
 N/B: You might need to Allow external Docker access on vite.config.js 
 ```sh
  server: {
-        host: '192.168.7.85',  // Allow external Docker access (local ip address) or 0.0.0.0
+        host: '192.168.7.85',  // Allow external Docker access (your local ip address) or 0.0.0.0
         port: 3000,       // Must match the Docker internal port
         watch: {
             usePolling: true,
