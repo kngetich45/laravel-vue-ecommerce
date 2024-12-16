@@ -128,5 +128,13 @@ N/B: You might need to Allow external Docker access on vite.config.js
 Mailhog: Visit http://localhost:8197 to access the Mailhog web interface where you can view emails sent by the application.
 
 MySQL Database: The MySQL database is available at mysql:3397. Use the credentials defined in your .env file.
-   
+ 
+
+
+### Run test
+
+```sh
+php artisan test
+```
+  
 
